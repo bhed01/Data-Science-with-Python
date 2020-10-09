@@ -20,7 +20,7 @@ def load_crime_dataset():
     # https://archive.ics.uci.edu/ml/datasets/Communities+and+Crime+Unnormalized
 
     crime = pd.read_table(
-        'CommViolPredUnnormalizedData.txt', sep=',', na_values='?')
+        './data/CommViolPredUnnormalizedData.txt', sep=',', na_values='?')
     crime.head()
     # remove features with poor coverage or lower relevance, and keep ViolentCrimesPerPop target column
     columns_to_keep = [5, 6] + \
